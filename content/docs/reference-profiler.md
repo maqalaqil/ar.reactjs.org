@@ -22,7 +22,7 @@ permalink: docs/profiler.html
 
 A `Profiler` يمكن إضافتها في أي مكان في شجرة 
 React لقياس تكلفة تصيير  ذلك الجزء من الشجرة.
-It requires two props: an `id` (string) and an `onRender` callback (function) which React calls any time a component within the tree "commits" an update.
+
  `تعريف` (string) و ` بل تصيير`:يتطلب اثنين خاصيات 
 callback (دالة) الذي يستدعيه React في أي وقت 
 مكوّن داخل الشجرة "بارتكاب" تحديثًا.
