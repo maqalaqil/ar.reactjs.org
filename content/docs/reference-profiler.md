@@ -8,21 +8,27 @@ permalink: docs/profiler.html
 
 ال 'profiler' يقيس عدد مرات عرض تطبيق React 
 و "تكلفة" التصيير
-Its purpose is to help identify parts of an application that are slow and may benefit from [optimizations such as memoization](/docs/hooks-faq.html#how-to-memoize-calculations).
+والغرض منه هو المساعدة في تحديد أجزاء التطبيق البطيئة والتي قد تستفيد منها [تحسينات مثل memoization](/docs/hooks-faq.html#how-to-memoize-calculations).
 
-> Note:
+> ملحوظة:
 >
-> Profiling adds some additional overhead, so **it is disabled in [the production build](/docs/optimizing-performance.html#use-the-production-build)**.
+> Profiling 
+يضيف بعض النفقات العامة الإضافية ، لذلك **تم تعطيله في [the production build](/docs/optimizing-performance.html#use-the-production-build)**.
 >
-> To opt into production profiling, React provides a special production build with profiling enabled.
-> Read more about how to use this build at [fb.me/react-profiling](https://fb.me/react-profiling)
+>  يوفر إنشاء إنتاج خاص مع تمكين  production profiling  يختار 
+> اقرأ المزيد حول كيفية استخدام هذا البناء في [fb.me/react-profiling](https://fb.me/react-profiling)
 
-## Usage {#usage}
+## إستعمال {#usage}
 
-A `Profiler` can be added anywhere in a React tree to measure the cost of rendering that part of the tree.
+A `Profiler` يمكن إضافتها في أي مكان في شجرة 
+React لقياس تكلفة تصيير  ذلك الجزء من الشجرة.
 It requires two props: an `id` (string) and an `onRender` callback (function) which React calls any time a component within the tree "commits" an update.
-
-For example, to profile a `Navigation` component and its descendants:
+ `تعريف` (string) و ` بل تصيير`:يتطلب اثنين خاصيات 
+callback (دالة) الذي يستدعيه React في أي وقت 
+مكوّن داخل الشجرة "بارتكاب" تحديثًا.
+على سبيل المثال ، للتوصيف
+a `Navigation` component
+ونسله:
 
 ```js{3}
 render(
