@@ -6,7 +6,8 @@ category: Reference
 permalink: docs/profiler.html
 ---
 
-The `Profiler` measures how often a React application renders and what the "cost" of rendering is.
+ال 'profiler' يقيس عدد مرات عرض تطبيق React 
+و "تكلفة" التصيير
 Its purpose is to help identify parts of an application that are slow and may benefit from [optimizations such as memoization](/docs/hooks-faq.html#how-to-memoize-calculations).
 
 > Note:
